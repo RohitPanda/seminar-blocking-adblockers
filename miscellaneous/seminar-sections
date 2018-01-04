@@ -1,0 +1,89 @@
+Abstract
+Keywords
+1. Introduction
+    Motivation
+    Roadmap
+2. Background and Related Work
+    Background
+        The popularity of ad-blockers
+            <img>
+        Economic Impact of Ad-blocking
+            <img>
+        How do ad-blockers work?
+            <Code>
+            Filter Lists
+            Filter Matching
+        Ad-blocker extensions available
+        The rise of anti ad-blockers
+            <img>
+        Economic Impact of anti ad-blockers
+            <Img>
+        Impact of ad-blockers on browser performance and page load times.
+    Related Work
+        Online Advertising
+        Ad-blockers
+        Anti Ad-blockers
+3. Detecting Anti-adblockers
+    Overview
+    Methodology
+        Crawler overview
+            <Img>
+        A/B testing
+            <Img>
+        Browser profiles
+        Identifying JS objects with common sources
+            <code>
+        Choice of similarity metric and threshold
+        Improving scalability
+        Source and functionality identification
+        Method limitations
+4. Datasets and Results
+    Characterizing websites that employ Anti-adblocking
+        <graph>
+    Comparison of different ad-blockers and profiles
+        <graph>
+    Website response to detection of adblockers
+        <img>
+    Geographical Comparison
+        <img>
+    Limitations
+5. Discussion
+    How anti-adblockers work
+        Analyzing Anti ad-block scripts
+            Collecting scripts
+            First-Party Anti Ad-blocking scripts
+                <Code>
+                Timing
+                Detection Logic
+                Response
+            Third-Party Anti Ad-blocking scripts
+                <Code>
+                Timing
+                Detection Logic
+                Response
+            Community Anti Ad-blocking scripts
+                <Code>
+                Timing
+                Detection Logic
+                Response
+    Anti-adblocker suppliers
+    Adblocker response to being blocked
+        Anti ad-block filter lists
+        Comparative Analysis of Anti-Adblock Lists
+            <Graph>
+6. Alternatives to anti-adblocking like whitelisting and acceptable ads
+program
+    Acceptable Ads
+    WhiteLists
+    User Perception
+7. anti-adblock killers
+    How do they work
+8. Legality and Ethics of anti ad-blocking
+    Increasing Transparency
+    Legality in Germany and EU
+9. Conclusion
+    Future Work
+    Acknowledgements
+    Source code and data release
+References
+Appendix
