@@ -5,11 +5,19 @@ Keywords
     Roadmap
 2. Background and Related Work
     Background
+	<write few lines before starting the sections>
+		Online Advertising
+		Revenue Generation for Ads
         The popularity of ad-blockers
             <img>
+		The popularity of ad-blockers in Germany/EU
+			<img>
         Economic Impact of Ad-blocking
+			proposal.odt
             <img>
         How do ad-blockers work?
+			[Proceedings on Privacy Enhancing Technologies] Detecting Anti Ad-blockers in the Wild
+			Forbes.com page source, js analysis block element with and w/o ad block
             <Code>
             Filter Lists
             Filter Matching
@@ -17,6 +25,7 @@ Keywords
         The rise of anti ad-blockers
             <img>
         Economic Impact of anti ad-blockers
+			https://www.iabeurope.eu/policy/data-protection/research-report-the-economic-contribution-of-online-advertising-in-europe/
             <Img>
         Impact of ad-blockers on browser performance and page load times.
     Related Work
@@ -47,7 +56,7 @@ Keywords
     Geographical Comparison
         <img>
     Limitations
-5. Discussion
+5. Analysis
     How anti-adblockers work
         Analyzing Anti ad-block scripts
             Collecting scripts
@@ -76,11 +85,14 @@ program
     Acceptable Ads
     WhiteLists
     User Perception
-7. anti-adblock killers
+7. Anti-adblock killers
     How do they work
 8. Legality and Ethics of anti ad-blocking
     Increasing Transparency
     Legality in Germany and EU
+		https://www.reddit.com/r/worldnews/comments/4g2ikn/websites_that_detect_adblockers_to_stop_their/
+		http://www.theregister.co.uk/2016/04/23/anti_ad_blockers_face_legal_challenges/
+		https://digiday.com/media/not-going-give-german-publishers-continue-war-ad-blockers/
 9. Improving Ad-blockers
 10. Conclusion
     Future Work
