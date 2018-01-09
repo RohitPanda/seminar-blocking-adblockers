@@ -17,13 +17,13 @@ import net.lightbody.bmp.proxy.CaptureType;
 public class FirstTestCase {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver","D:\\1 Rohit\\1 TUM\\Semester 3 - WS17\\Seminar\\code\\seminar-blocking-adblockers\\chromedriver_win32\\chromedriver.exe");
 		BrowserMobProxyServer proxy = new BrowserMobProxyServer();
 	    proxy.start(0);
 	    Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 	    ChromeOptions chromeOptions = new ChromeOptions();
 	    chromeOptions.setCapability(CapabilityType.PROXY, seleniumProxy);
-	    chromeOptions.addExtensions(new File("/home/rohit/chromedriver/adblockpluschrome-3.0.2.1948.crx"));
+	    chromeOptions.addExtensions(new File("D:\\1 Rohit\\1 TUM\\Semester 3 - WS17\\Seminar\\code\\seminar-blocking-adblockers\\chromedriver_win32\\adblockpluschrome-3.0.2.1948.crx"));
 
 	    WebDriver driver = new ChromeDriver(chromeOptions);
 
