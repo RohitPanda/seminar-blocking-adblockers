@@ -1,0 +1,3 @@
+site,lines,words,tags,div,h1,h2,h3,img,table,p,a,iframe,keyword,url_change,cosine_similarity,Anti-Adblock
+bild.de,638,3881,1904,301,-1,34,81,159,0,59,370,1,1,1,0.775693021047,TRUE
+google.de,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0.999360507377,FALSE
