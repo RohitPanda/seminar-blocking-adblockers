@@ -26,7 +26,7 @@ def cosine_sim(text1, text2):
     tfidf = vectorizer.fit_transform([text1, text2])
     return ((tfidf * tfidf.T).A)[0,1]
     
-
+#Change these paths
 current_dir = '/home/rohit/chromedriver'
 chromedriver_path = '/usr/bin/chromedriver'
 
@@ -46,6 +46,7 @@ csvfile = open(csv_path, 'w', newline='')
 writer = csv.writer(csvfile)
 
 writer.writerow(['site', 'lines', 'words', 'tags', 'div', 'h1', 'h2', 'h3', 'img', 'table', 'p', 'a', 'iframe', 'keyword', 'url_change', 'cosine_similarity', 'Anti-Adblock'])
+#Anti-Adblock : {TRUE, FALSE} needs to be filled manually from the screenshots
 
 for site in sites:
     
