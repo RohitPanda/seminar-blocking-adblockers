@@ -1,6 +1,6 @@
 #Usage : seminar.py > Log-<Date>.txt
 
-import time
+from time import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
@@ -10,6 +10,8 @@ import nltk, string
 from sklearn.feature_extraction.text import TfidfVectorizer
 import csv
 import requests
+
+start_time = time()
 
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
@@ -56,11 +58,17 @@ for site in sites:
     url = "http://www."+site
     print(url)
     
-    r = requests.head(url, timeout=1)
+    try:
+        r = requests.head(url, timeout=1, allow_redirects=True)
+    except Exception as e: 
+        print (e.__doc__)
+        print (e.message)
+        print("NOK")
+        continue
     if r.status_code > 399 :
         print(r.status_code)
         continue
-    
+
     output_dir = current_dir + '/' + site
     print(output_dir)
     makedirs(output_dir, exist_ok=True)
@@ -205,6 +213,10 @@ for site in sites:
 
 f.close()
 csvfile.close()
+
+
+print('\nTook ' + str(time() - start_time) + 's\n')
+
 
 #Weka-Conversion
 #java -cp /home/rohit/ML_SWT/weka-3-8-1/weka.jar weka.core.converters.CSVLoader features.csv -L "Anti-Adblock:TRUE,FALSE" > features.arff
