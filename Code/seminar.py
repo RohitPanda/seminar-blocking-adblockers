@@ -1,6 +1,6 @@
 #Usage : seminar.py > Log-<Date>.txt
 
-from time import time
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
@@ -11,7 +11,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import csv
 import requests
 
-start_time = time()
+start_time = time.time()
 
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
@@ -215,7 +215,7 @@ f.close()
 csvfile.close()
 
 
-print('\nTook ' + str(time() - start_time) + 's\n')
+print('\nTook ' + str(time.time() - start_time) + 's\n')
 
 
 #Weka-Conversion
