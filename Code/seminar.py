@@ -9,6 +9,7 @@ import re
 import nltk, string
 from sklearn.feature_extraction.text import TfidfVectorizer
 import csv
+import requests
 
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
@@ -52,6 +53,14 @@ for site in sites:
     
     site = site.rstrip()
     
+    url = "http://www."+site
+    print(url)
+    
+    r = requests.head(url, timeout=1)
+    if r.status_code > 399 :
+        print(r.status_code)
+        continue
+    
     output_dir = current_dir + '/' + site
     print(output_dir)
     makedirs(output_dir, exist_ok=True)
@@ -62,8 +71,6 @@ for site in sites:
     chrome_options.add_argument("user-data-dir="+profile_path);    
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
     
-    url = "http://www."+site
-    print(url)
     
     driver.get(url)
     time.sleep(sleep_time)
@@ -108,10 +115,10 @@ for site in sites:
     print(all_p_adb)
     print(all_anchor_adb)
     print(all_iframe_adb)
-    print(len(soup(text=re.compile('adblocker|adblock|ad block|ad-block|whitelist|block-adblock|pagefair|fuckadblock', re.I))))
+    print(len(soup(text=re.compile('adblocker|adblock|ad block|ad-block|whitelist|block-adblock|pagefair|fuckadblock|blockadblock', re.I))))
     
     keyword_present = 0
-    if (len(soup(text=re.compile('adblocker|adblock|ad block|ad-block|whitelist|block-adblock|pagefair|fuckadblock', re.I)))) > 0:
+    if (len(soup(text=re.compile('adblocker|adblock|ad block|ad-block|whitelist|block-adblock|pagefair|fuckadblock|blockadblock', re.I)))) > 0:
         keyword_present = 1
     
     
