@@ -1,4 +1,4 @@
-#Usage : seminar.py > Log-<Date>.txt
+#Usage : python seminar.py > Log-<Date>.txt
 
 import time
 from selenium import webdriver
@@ -30,17 +30,17 @@ def cosine_sim(text1, text2):
     return ((tfidf * tfidf.T).A)[0,1]
     
 #Change these paths
-current_dir = '/home/rohit/chromedriver'
+current_dir = '/home/rohit/chromedriver/Seminar'
 chromedriver_path = '/usr/bin/chromedriver'
 
-url_path = '/home/rohit/chromedriver/url-list.txt'
+url_path = '/home/rohit/chromedriver/Seminar/url-list.txt'
 
-csv_path = '/home/rohit/chromedriver/features.csv'
+csv_path = '/home/rohit/chromedriver/Seminar/features.csv'
 
 #Changes can be made in the Adblock configuration to this Profile
 profile_path = '/home/rohit/.config/google-chrome/Profile 1/'
 
-sleep_time = 3
+sleep_time = 6
 
 f = open(url_path, 'r')
 sites = f.readlines()
@@ -55,14 +55,13 @@ for site in sites:
     
     site = site.rstrip()
     
+    #url = "http://www."+site
     url = "http://www."+site
     print(url)
     
     try:
         r = requests.head(url, timeout=1, allow_redirects=True)
-    except Exception as e: 
-        print (e.__doc__)
-        print (e.message)
+    except Exception as e:
         print("NOK")
         continue
     if r.status_code > 399 :
@@ -79,14 +78,29 @@ for site in sites:
     chrome_options.add_argument("user-data-dir="+profile_path);    
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
     
+    driver.set_page_load_timeout(10)
+    try:
+        driver.get(url)
+    except :
+        print("Page load Timeout Occured. Quiting !!!")
+        driver.quit()
+        continue
+    try:
+        url_redirect_adb = driver.current_url
+        print(url_redirect_adb)
+    except:
+        driver.quit()
+        continue
     
-    driver.get(url)
+    
     time.sleep(sleep_time)
     
-    url_redirect_adb = driver.current_url
-    print(url_redirect_adb)
-    
-    driver.save_screenshot(output_dir + '/' + 'adblock.png')
+
+    try:
+        driver.save_screenshot(output_dir + '/' + 'adblock.png')
+    except:
+        driver.quit()
+        continue
     content = driver.page_source
     
     driver.quit()
@@ -135,15 +149,27 @@ for site in sites:
     
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
     
-    
-    driver.get(url)
-    
+    driver.set_page_load_timeout(10)
+    try:
+        driver.get(url)
+    except :
+        print("Page load Timeout Occured. Quiting !!!")
+        driver.quit()
+        continue
     time.sleep(sleep_time)
     
-    url_redirect= driver.current_url
+    try:
+        url_redirect= driver.current_url
+    except:
+        driver.quit()
+        continue
     print(url_redirect)
     
-    driver.save_screenshot(output_dir + '/' + 'noadblock.png')
+    try:
+        driver.save_screenshot(output_dir + '/' + 'noadblock.png')
+    except:
+        driver.quit()
+        continue
     content = driver.page_source
     
     driver.quit()
@@ -205,9 +231,9 @@ for site in sites:
     feature_list.append(all_iframe - all_iframe_adb)
     feature_list.append(keyword_present)
     feature_list.append(url_change)
-    feature_list.append(cosine_sim(html_noadblock, html_adblock))
+    #feature_list.append(cosine_sim(html_noadblock, html_adblock))
     
-    print(cosine_sim(html_noadblock, html_adblock))
+    #print(cosine_sim(html_noadblock, html_adblock))
     
     writer.writerow(feature_list)
 
