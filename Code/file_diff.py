@@ -1,5 +1,5 @@
-with open('site_dot_de.txt', 'r') as file1:
-    with open('1.txt', 'r') as file2:
+with open('all', 'r') as file1:
+    with open('done', 'r') as file2:
         same = set(file1).difference(file2)
 
 same.discard('\n')
