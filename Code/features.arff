@@ -14,7 +14,7 @@
 @ATTRIBUTE iframe REAL
 @ATTRIBUTE keyword {0,1}
 @ATTRIBUTE url_change {0,1}
-@ATTRIBUTE anti-adblock {TRUE,FALSE}
+@ATTRIBUTE anti-adblock {FALSE,TRUE}
 
 @DATA
 0,0,1,0,0,0,0,0,0,0,0,0,0,1,?
