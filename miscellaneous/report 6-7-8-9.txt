@@ -1,0 +1,70 @@
+#Comments for other sections and subsections.
+
+6. Alternatives to anti-adblocking like acceptable ads and whitelisting
+program
+    Acceptable Ads
+		https://acceptableads.com
+		https://www.internetworld.de/onlinemarketing/adblocker/mitglieder-eyeos-acceptable-ads-committee-1205171.html
+		Acceptable ads programme (by Adblock Plus) lays down a technique that is focussed on effecting ads on websites. They define a certain set of criterias that ensure that ads placed on websites are not annoying to users, distrupt or distort the web page content and are transparent such that there are no hidden ads or popups that violate the ad being accepted as an acceptable ad. The criterias are defined as follows (https://acceptableads.com/en/about/criteria):
+			Placement: Ads must be placed such that they do not disrupt the user's natural reading flow. Such ads must be inserted in the top, side or beneath the Primary Content. The Primary Content is either directly related or expands upon the central topic of a document or the central functionality of a software application.
+			Distinction: Ads should not be mixed with any other content such that the user is misled into thinking of it as a primary content. Ads should be clearly marked with the word "Advertisement" or its equivalent.
+			Size: Individual ad size requirements depend on the placement of the ad:
+				- When placed above the primary content, the maximum height of an ad should be 200px.
+				- When placed on the side of the primary content, the maximum width of an ad should be 350px.
+				- When placed below the primary content, the maximum height of an ad should be 400px.
+		In addition to the above mentioned acceptable ads, there are various types or categories of ads that are not acceptable. They are listed as follows:
+		- Ads that visibly generate new ads if the Primary Content does not change
+		- Ads with excessive or non user-initiated hover effects
+		- Animated ads
+		- Autoplay on sound or video ads
+		- Ads that expand
+		- Oversized image ads
+		- Interstitial page ads
+		- Overlay ads and overlay in-video ads
+		- Pop-ups and Pop-unders
+		- Pre-roll video ads
+		- Rich media ads (e.g. Flash ads, Shockwave ads, etc.)
+    WhiteLists
+		https://hg.adblockplus.org/exceptionrules/summary
+		https://adblockplus.org/acceptable-ads#application
+		Websites that adhere to the Acceptable Ads programme can apply for their websites to be whitelisted with Adblock Plus. This is very similar to anti-viruses marking some applications as "safe" and allowing them to run, while blocking other potentially harmful ones. As a common practice, publishers that detect ad-blockers ask users to whitelist their websites using the Disable or Whitelist option for the respective ad-blocker they are using. While most ad-blockers allow users to configure their browsers to whitelist individual websites, users rarely make use of this. That is where ad-blockers like Adblock Plus provide a default whitelist.
+    User Perception
+		Websites such as Forbes, request users to whitelist their site so that they can get "ad-light experience" for a few days. The Atlantic has started charging users for an ad-free version of their website if users do not disable ad-blockers. For users, it is about all or nothing.
+		<*******need to add more details*******>
+		
+7. Anti-adblock killers
+    How do they work
+
+8. Legality and Ethics of anti ad-blocking
+    Increasing Transparency
+		https://techcrunch.com/2017/12/27/thousands-of-major-sites-are-taking-silent-anti-ad-blocking-measures/
+		http://www.populartechnology.net/2005/03/why-adblock-is-bad-for-free-internet.html
+		https://www.makeuseof.com/tag/ethics-stealing-games-journalism-ad-block-needs-die-priority/
+		The argument of anti ad-blocking ensues on the topic of maintenance of websites and henceforth businesses. Users of ad-block often fail to understand how these websites pay for their monthly server and bandwidth charges. For most of such "free" sites, their revenue is generated through advertisements. Other websites use subscription services while the rest consume the costs. The latter ones are those that have another source of revenue which is usually not Internet based.
+		The bottom line of any business is that labor must be paid. It must be in accordance to what a writer, producer, musician, developer or any professional creates. This also revolves around the fact that the cost of living varies across the globe. Websites are compensated based on impressions measured by pay per click or cost per click on the adverts. While significantly bigger businesses could potentially hire more people to keep their websites running on profit, the smaller businesses are the ones who suffer the most. An analogy of going to a shop, purchasing an item and paying for the item collaborates with the model of advertisements. It is unethical to leave the shop without paying appropriately for the item. With the increasing cost of maintenance of websites and the cost of living, publishers rely heavily on such revenue sources.
+		There is a noticeable trend in publishers who detect the presence of ad-blockers are now fighting back against ad-blockers by asking users to disable ad-blockers or by subscribing for an ad-free version. This poses an ethical dilemma to users, using an ad-block and stopping revenue income for publishers as well as for publishers, using an anti ad-blocker to prevent users' intentions of blocking ads.
+    Legality in Germany and EU
+		https://www.reddit.com/r/worldnews/comments/4g2ikn/websites_that_detect_adblockers_to_stop_their/
+		http://www.theregister.co.uk/2016/04/23/anti_ad_blockers_face_legal_challenges/
+		https://digiday.com/media/not-going-give-german-publishers-continue-war-ad-blockers/
+		https://www.heise.de/newsticker/meldung/OLG-Muenchen-Adblocking-ist-legal-3806291.html
+		https://www.wired.de/collection/business/gerichtsurteil-adblock-plus-verlage
+		https://www.reuters.com/article/us-germany-adblocking-court/german-court-says-eyeos-ad-blocking-software-legal-idUSKCN1AX27E
+		IMP: https://www.wbs-law.de/wettbewerbsrecht/auch-spiegel-online-verliert-gegen-adblocker-betreiber-eyeo-71229/
+		IMP: https://arstechnica.com/tech-policy/2016/12/german-judges-explain-why-adblock-plus-is-legal/
+		
+		
+		European Union
+		https://digiday.com/uk/blocking-ad-blockers-really-illegal-europe/
+		http://www.ibtimes.co.uk/anti-ad-blocking-websites-could-be-acting-illegally-will-be-named-shamed-1556794
+		Article 5.3: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058
+		Interactive Advertising Bureau (IAB) are of the opinion that ad block detection is not illegal. The European Commission had in a letter to privacy campaigner Alexander Hanff (https://twitter.com/alexanderhanff/status/722861362607747072) specified that ad-blocker detection tool requires access to user data to determine if they have extensions or tools to block ads. Article 5.3 of the European Union's ePrivacy Directive (http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0058) states: "Member States shall ensure that the use of electronic communications networks to store information or to gain access to information stored in the terminal equipment of a subscriber or user is only allowed on condition that the subscriber or user concerned is provided with clear and comprehensive information in accordance with Directive 95/46/EC, inter alia about the purposes of the processing, and is offered the right to refuse such processing by the data controller. This shall not prevent any technical storage or access for the sole purpose of carrying out or facilitating the transmission of a communication over an electronic communications network, or as strictly necessary in order to provide an information society service explicitly requested by the subscriber or user."
+		Under this EU law, publishers must ask for permission before accessing a user's personal information, similar to how websites must ask for permission to store cookies on user devices. However the other side of the argument is that publishers are only detecting via Javascript if the ads have been delivered, not checking if any ad-blocker is installed, thus making it comply with the ePrivacy directive.
+		
+		Germany
+		Media groups Süddeutsche Zeitung, Pro-Sieben-Sat.1, and IP Deutschland, an RTL subsidiary recently fought a legal battle against Cologne-based ad-blocking vendor Eyeo for banning of Eyeo's ad-blocking software. The Munich higher regional court ruled (https://www.wired.de/collection/business/gerichtsurteil-adblock-plus-verlage) that the ad-blocking software Adblock Plus is legal. The Munich higher regional court also noted that the software did not violate any competition laws in Germany, with Eyeo’s business model not qualifying as "forbidden aggressive advertising". Although joining this Eyeo's whitelist is free, the media groups are objecting to the fact that Eyeo is making money from the extra revenues that the advertisers are making by joining these whitelists under the Acceptable Ads programme.
+		This court order comes in contrast to another similar court order ruling in Cologne, where publisher Axel Springer secured a partial victory (https://digiday.com/uk/axel-springers-loss-ad-blocking-suit-means-uk-publishers/) against Eyeo stating that Adblock Plus must add Axel Springer to the whitelist for free but must abide by the Acceptable Ads criteria. The constrast in such verdicts could potentially build up these cases to Germany’s Federal Court of Justice.
+		In a blog post detailing the court decisions (https://adblockplus.org/blog/it-s-still-perfectly-legal-to-block-ads-in-germany-after-latest-court-victory-over-spiegel) Adblock Plus maintain their legality under German laws and as such the German judges have since not favored the usage of ad-blocking detectors. In a Hamburg judgement for Spiegel versus Eyeo, which has since been made public, Eyeo cited (http://www.landesrecht-hamburg.de/jportal/portal/page/bsharprod.psml?showdoccase=1&doc.id=JURE170021729&st=ent) that as of August 2015, Adblock Plus was installed on approximately 9.55 million browsers with German IP addresses, which accounted for around 5% of the computers in Germany used to access the Internet. Almost 3,500 websites were whitelisted for Adblock Plus' Acceptable Ads to be viewed by default. From these, around 90% did not pay, but the largest 10% did. The judges concluded that Internet users have a genuine interest in the removal of such undesired advertising, protection from potentially malicious softwares and control of their data.
+
+9. Improving Ad-blockers
+
