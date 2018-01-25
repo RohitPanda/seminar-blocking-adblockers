@@ -151,7 +151,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 150,gelbeseiten.de,FALSE,FALSE,FALSE,,,
 151,asos.de,FALSE,FALSE,FALSE,,,
 152,adspirit.de,FALSE,FALSE,FALSE,,,
-153,auto-motor-und-sport.de,TRUE,TRUE,FALSE,FALSE,Sports/Games,Ads show
+153,auto-motor-und-sport.de,TRUE,TRUE,FALSE,TRUE,Sports/Games,Ads show
 154,kalaydo.de,FALSE,FALSE,FALSE,,,
 155,volkswagen.de,FALSE,FALSE,FALSE,,,
 156,redcoon.de,FALSE,FALSE,FALSE,,,
@@ -236,7 +236,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 235,oio.de,FALSE,FALSE,FALSE,,,
 236,msb-consultants.de,FALSE,FALSE,FALSE,,,
 237,studis-online.de,FALSE,FALSE,FALSE,,,
-238,mz-web.de,TRUE,TRUE,FALSE,FALSE,News/Journal,Ads show
+238,mz-web.de,TRUE,TRUE,FALSE,TRUE,News/Journal,Ads show
 239,steinberg.de,FALSE,FALSE,FALSE,,,
 240,die-gdi.de,FALSE,FALSE,FALSE,,,
 241,facebook.de,TRUE,FALSE,FALSE,FALSE,,
@@ -359,7 +359,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 358,problemkaputt.de,FALSE,FALSE,FALSE,,,
 359,embl.de,FALSE,FALSE,FALSE,,,
 360,fingerstyle-rules.de,FALSE,FALSE,FALSE,,,
-361,noz.de,TRUE,TRUE,FALSE,FALSE,News/Journal,Ads show
+361,noz.de,TRUE,TRUE,FALSE,TRUE,News/Journal,Ads show
 362,hr-online.de,FALSE,FALSE,FALSE,,,
 363,radio.de,FALSE,FALSE,FALSE,,,
 364,1jux.de,FALSE,FALSE,FALSE,,,
@@ -763,7 +763,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 762,shz.de,FALSE,FALSE,FALSE,,,
 763,nikolaus-hohl.de,FALSE,FALSE,FALSE,,,
 764,boker.de,FALSE,FALSE,FALSE,,,
-765,iban-rechner.de,FALSE,TRUE,FALSE,FALSE,Business,Ads show
+765,iban-rechner.de,FALSE,TRUE,FALSE,TRUE,Business,Ads show
 766,souldrinker.de,FALSE,FALSE,FALSE,,,
 767,aqion.de,FALSE,FALSE,FALSE,,,
 768,woolpedia.de,FALSE,FALSE,FALSE,,,
@@ -1155,7 +1155,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1154,parship.de,FALSE,FALSE,FALSE,,,
 1155,gamestar.de,FALSE,FALSE,FALSE,,,
 1156,edarling.de,FALSE,FALSE,FALSE,,,
-1157,kicker.de,TRUE,FALSE,FALSE,FALSE,Sports/Games,Ads show
+1157,kicker.de,TRUE,FALSE,FALSE,TRUE,Sports/Games,Ads show
 1158,douglas.de,FALSE,FALSE,FALSE,,,
 1159,schnell-abnehmen-nach-der-schwangerschaft.de,FALSE,FALSE,FALSE,,,
 1160,innogames.de,FALSE,FALSE,FALSE,,,
@@ -1187,7 +1187,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1186,nicebridge.de,FALSE,FALSE,FALSE,,,
 1187,movie4k.to,FALSE,FALSE,FALSE,,,
 1188,kfm-motorraeder.de,FALSE,FALSE,FALSE,,,
-1189,wetteronline.de,FALSE,TRUE,FALSE,FALSE,News/Journal,Ads show
+1189,wetteronline.de,FALSE,TRUE,FALSE,TRUE,News/Journal,Ads show
 1190,mmoga.de,FALSE,FALSE,FALSE,,,
 1191,gwdg.de,FALSE,FALSE,FALSE,,,
 1192,swr.de,FALSE,FALSE,FALSE,,,
@@ -1235,7 +1235,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1234,suchtgames.de,FALSE,FALSE,FALSE,,,
 1235,dynacast.de,FALSE,FALSE,FALSE,,,
 1236,tu-muenchen.de,FALSE,FALSE,FALSE,,,
-1237,motor-talk.de,TRUE,TRUE,FALSE,FALSE,Sports/Games,Ads show
+1237,motor-talk.de,TRUE,TRUE,FALSE,TRUE,Sports/Games,Ads show
 1238,upgr.de,FALSE,FALSE,FALSE,,,
 1239,glueckstreter.de,FALSE,FALSE,FALSE,,,
 1240,revell.de,FALSE,FALSE,FALSE,,,
@@ -1341,7 +1341,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1340,stepstone.de,FALSE,FALSE,FALSE,,,
 1341,ultrafine.de,FALSE,FALSE,FALSE,,,
 1342,girogate.de,FALSE,FALSE,FALSE,,,
-1343,wissen.de,TRUE,FALSE,FALSE,FALSE,News/Journal,Ads show
+1343,wissen.de,TRUE,FALSE,FALSE,TRUE,News/Journal,Ads show
 1344,rottmair.de,FALSE,FALSE,FALSE,,,
 1345,9gag.com,TRUE,FALSE,FALSE,FALSE,,
 1346,targobank.de,FALSE,FALSE,FALSE,,,
@@ -1442,7 +1442,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1441,hsozkult.de,FALSE,FALSE,FALSE,,,
 1442,dlc.lib.de.us,FALSE,FALSE,FALSE,,,
 1443,arcor.de,FALSE,FALSE,FALSE,,,
-1444,express.de,TRUE,TRUE,FALSE,FALSE,News/Journal,Ads show
+1444,express.de,TRUE,TRUE,FALSE,TRUE,News/Journal,Ads show
 1445,your-server.de,FALSE,FALSE,FALSE,,,
 1446,holidaycheck.de,FALSE,FALSE,FALSE,,,
 1447,nordbayern.de,FALSE,FALSE,FALSE,,,
@@ -1451,7 +1451,7 @@ Site,Site Name,J48,Random Forest,Naive Bayes,Actual,Category,
 1450,photozone.de,FALSE,FALSE,FALSE,,,
 1451,maenner-legenden.de,FALSE,FALSE,FALSE,,,
 1452,haw-hamburg.de,FALSE,FALSE,FALSE,,,
-1453,ksta.de,TRUE,TRUE,FALSE,FALSE,News/Journal,Ads show
+1453,ksta.de,TRUE,TRUE,FALSE,TRUE,News/Journal,Ads show
 1454,eleggs.de,FALSE,TRUE,FALSE,FALSE,,
 1455,entwickler.de,FALSE,FALSE,FALSE,,,
 1456,tuhh.de,FALSE,FALSE,FALSE,,,
