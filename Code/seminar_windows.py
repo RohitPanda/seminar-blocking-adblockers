@@ -249,3 +249,4 @@ print('\nTook ' + str(time.time() - start_time) + 's\n')
 
 #Weka-Conversion
 #java -cp /home/rohit/ML_SWT/weka-3-8-1/weka.jar weka.core.converters.CSVLoader features.csv -L "Anti-Adblock:TRUE,FALSE" > features.arff
+#java -cp weka.jar weka.core.converters.CSVLoader features_de_1_store.csv -L -B 1000 "Anti-Adblock:TRUE,FALSE" > features_de_1_store.arff
