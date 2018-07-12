@@ -34,14 +34,14 @@ def cosine_sim(text1, text2):
 current_dir = 'D:\\1 Rohit\\1 TUM\\Semester 3 - WS17\\Seminar\\run\\Code'
 chromedriver_path = 'D:\\1 Rohit\\1 TUM\\Semester 3 - WS17\\Seminar\\code\\seminar-blocking-adblockers\\chromedriver_win32\\chromedriver.exe'
 
-url_path = 'D:\\1 Rohit\\1 TUM\Semester 3 - WS17\\Seminar\\run\\Code\\url-list.txt'
+url_path = 'D:\\1 Rohit\\1 TUM\Semester 3 - WS17\\Seminar\\run\\top_sites_DE.txt'
 
-csv_path = 'D:\\1 Rohit\\1 TUM\Semester 3 - WS17\\Seminar\\run\\Code\\features.csv'
+csv_path = 'D:\\1 Rohit\\1 TUM\Semester 3 - WS17\\Seminar\\run\\features_de_1.csv'
 
 #Changes can be made in the Adblock configuration to this Profile
-profile_path = 'C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\'
+profile_path = 'C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1'
 
-sleep_time = 6
+sleep_time = 10
 
 f = open(url_path, 'r', encoding='utf-8')
 sites = f.readlines()
@@ -63,7 +63,7 @@ for site in sites:
     print(url)
     
     try:
-        r = requests.head(url, timeout=1, allow_redirects=True)
+        r = requests.head(url, timeout=20, allow_redirects=True)
     except Exception as e:
         print("NOK")
         continue
@@ -81,7 +81,7 @@ for site in sites:
     chrome_options.add_argument("user-data-dir="+profile_path);    
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
     
-    driver.set_page_load_timeout(10)
+    driver.set_page_load_timeout(20)
     try:
         driver.get(url)
     except :
@@ -152,7 +152,7 @@ for site in sites:
     
     driver = webdriver.Chrome(chromedriver_path, chrome_options=chrome_options)
     
-    driver.set_page_load_timeout(10)
+    driver.set_page_load_timeout(20)
     try:
         driver.get(url)
     except :
