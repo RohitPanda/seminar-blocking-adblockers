@@ -1,4 +1,22 @@
-lines,words,tags,div,h1,h2,h3,img,table,p,a,iframe,keyword,url_change,Anti-Adblock
+@relation features_dach_1_store
+
+@attribute lines REAL
+@attribute words REAL
+@attribute tags REAL
+@attribute div REAL
+@attribute h1 REAL
+@attribute h2 REAL
+@attribute h3 REAL
+@attribute img REAL
+@attribute table REAL
+@attribute p REAL
+@attribute a REAL
+@attribute iframe REAL
+@attribute keyword {0,1}
+@attribute url_change {0,1}
+@attribute Anti-Adblock {TRUE,FALSE}
+
+@data
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,?
 0,0,0,0,0,0,0,0,0,0,0,0,1,0,?
 -4,-27,-4,-1,0,0,0,-1,0,-3,0,1,1,0,?

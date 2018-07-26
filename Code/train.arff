@@ -1,20 +1,20 @@
 @RELATION train
 
-@ATTRIBUTE lines REAL
-@ATTRIBUTE words REAL
-@ATTRIBUTE tags REAL
-@ATTRIBUTE div REAL
-@ATTRIBUTE h1 REAL
-@ATTRIBUTE h2 REAL
-@ATTRIBUTE h3 REAL
-@ATTRIBUTE img REAL
-@ATTRIBUTE table REAL
-@ATTRIBUTE p REAL
-@ATTRIBUTE a REAL
-@ATTRIBUTE iframe REAL
-@ATTRIBUTE keyword {0,1}
-@ATTRIBUTE url_change {0,1}
-@ATTRIBUTE anti-adblock {FALSE,TRUE}
+@attribute lines REAL
+@attribute words REAL
+@attribute tags REAL
+@attribute div REAL
+@attribute h1 REAL
+@attribute h2 REAL
+@attribute h3 REAL
+@attribute img REAL
+@attribute table REAL
+@attribute p REAL
+@attribute a REAL
+@attribute iframe REAL
+@attribute keyword {0,1}
+@attribute url_change {0,1}
+@attribute Anti-Adblock {TRUE,FALSE}
 
 @DATA
 -9,-443,10,7,0,0,-1,-1,0,1,0,12,1,0,TRUE

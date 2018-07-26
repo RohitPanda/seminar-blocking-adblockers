@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     train
+Instances:    546
+Attributes:   15
+              lines
+              words
+              tags
+              div
+              h1
+              h2
+              h3
+              img
+              table
+              p
+              a
+              iframe
+              keyword
+              url_change
+              Anti-Adblock
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+p <= -1
+|   h3 <= -2: FALSE (2.0)
+|   h3 > -2: TRUE (36.0/1.0)
+p > -1
+|   h2 <= 1
+|   |   lines <= -1
+|   |   |   iframe <= 7
+|   |   |   |   keyword = 0
+|   |   |   |   |   a <= 0: FALSE (16.0/2.0)
+|   |   |   |   |   a > 0: TRUE (3.0/1.0)
+|   |   |   |   keyword = 1
+|   |   |   |   |   h2 <= -1: TRUE (2.0)
+|   |   |   |   |   h2 > -1
+|   |   |   |   |   |   tags <= -16: FALSE (8.0)
+|   |   |   |   |   |   tags > -16
+|   |   |   |   |   |   |   div <= -4: TRUE (8.0/1.0)
+|   |   |   |   |   |   |   div > -4
+|   |   |   |   |   |   |   |   a <= -1: TRUE (4.0/1.0)
+|   |   |   |   |   |   |   |   a > -1
+|   |   |   |   |   |   |   |   |   tags <= 21: FALSE (13.0/2.0)
+|   |   |   |   |   |   |   |   |   tags > 21: TRUE (2.0)
+|   |   |   iframe > 7
+|   |   |   |   lines <= -25: FALSE (2.0)
+|   |   |   |   lines > -25: TRUE (9.0)
+|   |   lines > -1
+|   |   |   a <= 17: FALSE (390.0/23.0)
+|   |   |   a > 17
+|   |   |   |   url_change = 0
+|   |   |   |   |   h3 <= -1: TRUE (5.0)
+|   |   |   |   |   h3 > -1: FALSE (13.0/3.0)
+|   |   |   |   url_change = 1: TRUE (4.0)
+|   h2 > 1
+|   |   keyword = 0
+|   |   |   url_change = 0: TRUE (4.0/1.0)
+|   |   |   url_change = 1: FALSE (4.0/1.0)
+|   |   keyword = 1: TRUE (21.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         510               93.4066 %
+Incorrectly Classified Instances        36                6.5934 %
+Kappa statistic                          0.7972
+Mean absolute error                      0.1178
+Root mean squared error                  0.2427
+Relative absolute error                 33.5018 %
+Root relative squared error             57.9254 %
+Total Number of Instances              546     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.012    0.949      0.750    0.838      0.806    0.896     0.837     TRUE
+                 0.988    0.250    0.931      0.988    0.959      0.806    0.896     0.943     FALSE
+Weighted Avg.    0.934    0.196    0.935      0.934    0.931      0.806    0.896     0.919     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  93  31 |   a = TRUE
+   5 417 |   b = FALSE
+
