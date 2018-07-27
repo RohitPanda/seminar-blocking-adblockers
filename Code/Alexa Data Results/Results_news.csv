@@ -24,6 +24,7 @@ Baltimoresun.com,"99,1:?,2:FALSE,,0.941",,"99,1:?,2:FALSE,,1",,"99,1:?,2:FALSE,,
 Bankrate.com,"64,1:?,2:FALSE,,0.941",,"64,1:?,2:FALSE,,1",,"64,1:?,2:FALSE,,0.671",,
 Bdnews24.com,"98,1:?,2:FALSE,,0.941",,"98,1:?,2:FALSE,,1",,"98,1:?,2:FALSE,,0.92",,
 Billoreilly.com,"267,1:?,2:FALSE,,0.941",,"267,1:?,2:FALSE,,1",,"267,1:?,2:FALSE,,1",,451
+Bild.de,"177,1:?,1:TRUE,,1",TP,"177,1:?,1:TRUE,,1",TP,"177,1:?,1:TRUE,,0.86",TP,
 Bismarcktribune.com,"296,1:?,2:FALSE,,0.941",,"296,1:?,2:FALSE,,1",,"296,1:?,2:FALSE,,1",,451
 Blastingnews.com,"107,1:?,2:FALSE,,0.941",,"107,1:?,2:FALSE,,1",,"107,1:?,2:FALSE,,1",,
 Bloomberg.com,"17,1:?,2:FALSE,,0.875",,"17,1:?,2:FALSE,,1",,"17,1:?,2:FALSE,,0.68",,
@@ -278,6 +279,7 @@ Stripes.com,"186,1:?,2:FALSE,,0.941",,"186,1:?,2:FALSE,,1",,"186,1:?,2:FALSE,,0.
 Sun-sentinel.com,"131,1:?,2:FALSE,,0.941",,"131,1:?,2:FALSE,,1",,"131,1:?,2:FALSE,,1",,451
 Suntimes.com,"139,1:?,1:TRUE,,1",FP,"139,1:?,2:FALSE,,1",,"139,1:?,2:FALSE,,0.55",,
 Syracuse.com,"144,1:?,1:TRUE,,0.972",FP,"144,1:?,2:FALSE,,1",,"144,1:?,1:TRUE,,0.69",FP,
+t3n.de,"80,1:?,1:TRUE,,1",TP,"80,1:?,1:TRUE,,1",TP,"80,1:?,1:TRUE,,0.86",TP,
 Tallahassee.com,"298,1:?,2:FALSE,,0.941",,"298,1:?,2:FALSE,,1",,"298,1:?,2:FALSE,,1",,Redirect to EU specific domain
 Telegraphindia.com,"154,1:?,2:FALSE,,0.941",,"154,1:?,2:FALSE,,1",,"154,1:?,2:FALSE,,0.89",,
 Tennessean.com,"198,1:?,2:FALSE,,0.941",,"198,1:?,2:FALSE,,1",,"198,1:?,2:FALSE,,1",,Redirect to EU specific domain
@@ -355,7 +357,7 @@ Yakimaherald.com,"304,1:?,2:FALSE,,0.941",,"304,1:?,2:FALSE,,1",,"304,1:?,2:FALS
 Yournewswire.com,"183,1:?,2:FALSE,,0.941",,"183,1:?,2:FALSE,,1",,"183,1:?,2:FALSE,,1",,
 Yr.no,"40,1:?,1:TRUE,,0.972",FP,"40,1:?,2:FALSE,,1",,"40,1:?,2:FALSE,,0.66",,Weather site content changes rapidly
 ,,,,,,,
-,,TP=11/FP=8,,TP=6/FP=1,,TP=12/FP=5,
+,,TP=10/FP=8,,TP=6/FP=1,,TP=11/FP=5,
 ,,,,,,,
 ,,,,,,,
 ,,"HTTP 451 ""Unavailable for Legal Reasons""",67,,,,
